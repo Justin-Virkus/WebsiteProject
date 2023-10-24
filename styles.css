@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+	border: solid;
+	border-color: black;
+}
+
+header {
+    background-color: #809fff;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+nav {
+    background-color: #3366ff;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    margin: 20px;
+	font-size: 2.2em;
+	line-height: 1.5; 
+}
+
+.left-column {
+    flex: 1;
+    max-width: 50%;
+    margin: 0 auto;
+	border: solid;
+	border-color: black;
+}
+
+.right-column {
+    flex: 1;
+}
+
+.recipe {
+    margin: 10px;
+    background-color: #809fff;
+    border: solid;
+    border-color: black;
+    padding: 5px;
+    overflow: auto; /* Clear the float to prevent layout issues */
+}
+
+.recipe h2 {
+    color: #000; 
+}
+.recipe img {
+    float: right; /* Float the image to the right */
+    margin: 0 0 10px 10px; /* Adjust margin as needed for spacing */
+	width: 50%;
+	
+}
+footer {
+    background-color: #809fff;
+    text-align: center;
+    padding: 10px;
+	border: solid;
+	border-color: black;
+}
+table tr:nth-child(even) {
+    background-color: #a6a6a6; /* Light gray background color for even rows */
+}
+
+table tr:nth-child(odd) {
+    background-color: #809fff; /* Blue background color for odd rows */
+}
+
+/* Borders for individual chefs */
+table tr {
+    border: solid; /* Add a border to each row */
+	border-color: black;
+}
+
+table td {
+    padding: 20px; /* Adjust the padding as needed */
+}
+table td {
+    padding: 20px; /* Adjust the padding as needed */
+    border: 5px solid black; /* Add a border around each cell */
+}
