@@ -54,15 +54,15 @@ nav a:hover {
     border: solid;
     border-color: black;
     padding: 5px;
-    overflow: auto; /* Clear the float to prevent layout issues */
+    overflow: auto; 
 }
 
 .recipe h2 {
     color: #000; 
 }
 .recipe img {
-    float: right; /* Float the image to the right */
-    margin: 0 0 10px 10px; /* Adjust margin as needed for spacing */
+    float: right; 
+    margin: 0 0 10px 10px; 
 	width: 50%;
 	
 }
@@ -74,25 +74,25 @@ footer {
 	border-color: black;
 }
 table tr:nth-child(even) {
-    background-color: #a6a6a6; /* Light gray background color for even rows */
+    background-color: #a6a6a6; 
 }
 
 table tr:nth-child(odd) {
-    background-color: #809fff; /* Blue background color for odd rows */
+    background-color: #809fff; 
 }
 
-/* Borders for individual chefs */
+
 table tr {
-    border: solid; /* Add a border to each row */
+    border: solid; 
 	border-color: black;
 }
 
 table td {
-    padding: 20px; /* Adjust the padding as needed */
+    padding: 20px; 
 }
 table td {
-    padding: 20px; /* Adjust the padding as needed */
-    border: 5px solid black; /* Add a border around each cell */
+    padding: 20px; 
+    border: 5px solid black; 
 }
 
 table {
@@ -123,7 +123,7 @@ tr:nth-child(even) {
     padding: 20px;
 }
 
-/* Colors and background for columns */
+
 .left-column {
     background-color: #809fff;
 }
@@ -132,7 +132,7 @@ tr:nth-child(even) {
     background-color: #FFFFFF;
 }
 
-/* Styling for definitions */
+
 .term {
     font-weight: bold;
 }
@@ -140,4 +140,89 @@ tr:nth-child(even) {
 .definition {
     margin-bottom: 15px;
 }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
+header {
+    background-color: #809fff;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative; /* Add this line */
+}
+
+#logo {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+nav {
+    background-color: #3366ff;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    margin: 20px;
+    font-size: 2.2em;
+    line-height: 1.5;
+}
+
+.left-column {
+    flex: 1;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.right-column {
+    flex: 1;
+}
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    margin: 20px;
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+.tab button.active {
+    background-color: #ccc;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}

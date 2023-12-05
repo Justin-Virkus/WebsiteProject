@@ -2,36 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Explore a world of culinary delights at Shut up and Eat. Discover mouthwatering recipes, meet talented chefs, and learn about seasonal produce. Your go-to destination for food lovers!">
+    <meta name="keywords" content="recipes, chefs, seasonal produce, culinary, food, cooking, gastronomy, restaurant, dining, cuisine">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Shut up and Eat</title>
 </head>
 <body>
-    <header>
-        <h1>Shut up and Eat</h1>
-    </header>
-    <nav>
-		<a href="index.html">Home</a>
-        <a href="recipes.html">Recipes</a>
-        <a href="chefbios.html">Chef's Bio</a>
-		<a href="seasonal.html">Seasonal Produce</a>
-		<a href="cultural.html">Cultural</a>
-		<a href="terms.html">Terms</a>
-	</nav>
-    <div class="container">
-        <div class="left-column">
-            <div class="ingredient-spotlight">
-			<h1>Ingredient Spotlight: Starfruit</h1>
-                <img src="starfruit.jpg" alt="Ingredient Spotlight">
-            </div>
-			<p> Starfruit, scientifically known as carambola, is a captivating tropical fruit cherished for both its unique appearance and versatile culinary applications. When sliced crosswise, the starfruit's flesh forms a striking star shape, which not only adds a visual flourish to dishes but also offers a delightful blend of sweet and tangy flavors. This exotic fruit can be enjoyed in various ways: it can be eaten fresh as a crisp and juicy snack, added to fruit salads for a burst of flavor, or juiced for a refreshing beverage. It's also a popular garnish for desserts, cocktails, and seafood dishes, lending a tropical touch to culinary creations. Beyond its culinary appeal, starfruit is packed with vitamin C, fiber, and antioxidants, making it a healthy addition to one's diet. Its versatility and exotic charm have made starfruit a favored ingredient in both sweet and savory recipes, allowing food enthusiasts to savor a taste of the tropics.</p>
+
+<header>
+    <div id="logo"><img src="your-logo.png" alt="Logo"></div>
+    <h1>Shut up and Eat</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="recipes.html">Recipes</a>
+    <a href="chefbios.html">Chef's Bio</a>
+    <a href="seasonal.html">Seasonal Produce</a>
+    <a href="cultural.html">Cultural</a>
+    <a href="terms.html">Terms</a>
+    <a href="addRecipe.html">Add a Recipe</a>
+</nav>
+
+<div class="container">
+    <div class="left-column">
+        <div class="ingredient-spotlight">
+            <h1>Ingredient Spotlight: Starfruit</h1>
+            <img src="starfruit.jpg" alt="Ingredient Spotlight">
         </div>
-        <div class="right-column">
-            <div class="recipe">
-                <h2>Star Fruit Salad</h2>
-                <p>This delightful Star Fruit Salad is a refreshing and exotic blend of flavors and textures. Star fruit, also known as carambola, takes center stage with its unique, star-shaped slices that add a touch of elegance to the salad. The star fruit is combined with tropical fruits like mango and kiwi, offering a harmonious balance of sweet and tangy. A zesty lime-honey dressing drizzled over the fruits enhances their natural sweetness, and a sprinkle of fresh mint leaves provides a burst of freshness. It's a perfect salad to enjoy on a warm day, and it can be served as a light dessert or a side dish at any gathering.</p>
-                <h3>Ingredients</h3>
-                <ul>
+        <p> Starfruit, scientifically known as carambola, is a captivating tropical fruit cherished for both its unique appearance and versatile culinary applications. When sliced crosswise, the starfruit's flesh forms a striking star shape, which not only adds a visual flourish to dishes but also offers a delightful blend of sweet and tangy flavors. This exotic fruit can be enjoyed in various ways: it can be eaten fresh as a crisp and juicy snack, added to fruit salads for a burst of flavor, or juiced for a refreshing beverage. It's also a popular garnish for desserts, cocktails, and seafood dishes, lending a tropical touch to culinary creations. Beyond its culinary appeal, starfruit is packed with vitamin C, fiber, and antioxidants, making it a healthy addition to one's diet. Its versatility and exotic charm have made starfruit a favored ingredient in both sweet and savory recipes, allowing food enthusiasts to savor a taste of the tropics.</p>
+    </div>
+    <div class="right-column">
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'StarFruitSalad')" id="defaultOpen">Star Fruit Salad</button>
+            <button class="tablinks" onclick="openCity(event, 'CinnamonTart')">Cinnamon StarFruit Tart</button>
+			<button class="tablinks" onclick="openCity(event, 'StarfruitLemonade')">StarFruit Mint Lemonade</button>
+        </div>
+
+        <div id="StarFruitSalad" class="tabcontent">
+            <h3>Star Fruit Salad</h3>
+            <p>This delightful Star Fruit Salad is a refreshing and exotic blend of flavors and textures. Star fruit, also known as carambola, takes center stage with its unique, star-shaped slices that add a touch of elegance to the salad. The star fruit is combined with tropical fruits like mango and kiwi, offering a harmonious balance of sweet and tangy. A zesty lime-honey dressing drizzled over the fruits enhances their natural sweetness, and a sprinkle of fresh mint leaves provides a burst of freshness. It's a perfect salad to enjoy on a warm day, and it can be served as a light dessert or a side dish at any gathering.</p>
+              <h3>Ingredients</h3>
+			 <ul>
                     <li>2 ripe star fruits (carambola), sliced</li>
                     <li>1 ripe mango, peeled, pitted, and cubed</li>
                     <li>2 kiwi, peeled and sliced</li>
@@ -49,12 +62,12 @@
                     <li>Serve immediately and enjoy the vibrant flavors of this star fruit salad.</li>
                    
                 </ol>
-            </div>
-            <div class="recipe">
-                <h2>Cinnamon StarFruit Tart</h2>
-                
-                <p>This dessert makes the starfruit shine in an unusual elegant way, and best of all its super easy!</p>
-                <h3>Ingredients</h3>
+        </div>
+
+        <div id="CinnamonTart" class="tabcontent">
+            <h3>Cinnamon StarFruit Tart</h3>
+            <p>This dessert makes the starfruit shine in an unusual elegant way, and best of all its super easy!</p>
+            <h3>Ingredients</h3>
                 <ul>
                     <li>1 sheet puff pastry, thawed</li>
                     <li>1 egg</li>
@@ -75,14 +88,65 @@
                     <li>Allow the tart to cool at least 5 minutes before serving. Top each slice with a scoop of ice cream if you like.</li>
                     
                 </ol>
-            </div>
+		</div>
+				
+				<div id="StarfruitLemonade" class="tabcontent">
+            <h3>Star Fruit and Mint Lemonade</h3>
+            <p>This Star Fruit and Mint Lemonade is perfect for a hot day or as a delightful beverage for gatherings.</p>
+            <h3>Ingredients</h3>
+                <ul>
+                    <li>2 ripe star fruits (carambola), sliced</li>
+                    <li>1 cup fresh lemon juice</li>
+					<li>1/2 cup sugar (adjust to taste)</li>
+					<li>4-5 fresh mint leaves</li>
+					<li>4 cups cold water</li>
+					<li>Ice cubes for serving</li>
+					<li>Mint sprigs and star fruit slices for garnish</li>
+                </ul>
+                <h3>Instructions</h3>
+                <ol>
+                    <li>Wash the star fruits thoroughly.</li>
+					<li>Slice the star fruits crosswise to create star-shaped slices. Remove any seeds.	</li>
+					<li>In a small saucepan, combine 1/2 cup of water, sugar, and fresh mint leaves.</li>
+					<li>Bring the mixture to a simmer over medium heat, stirring until the sugar dissolves.</li>
+					<li>Once the sugar is dissolved, remove the syrup from heat and let it cool. Strain to remove mint leaves.</li>
+					<li>In a pitcher, combine the fresh lemon juice and cold water.</li>
+					<li>Add the mint syrup to the lemonade base and stir well. Adjust the sweetness according to your preference.</li>
+					<li>Add the sliced star fruits to the lemonade pitcher. Stir gently to incorporate the star fruit slices.</li>
+					<li>Refrigerate the lemonade for at least 1-2 hours to allow the flavors to meld.</li>
+					<li>When ready to serve, fill glasses with ice cubes and pour the star fruit and mint lemonade over the ice.</li>
+					<li>Garnish each glass with a sprig of mint and a star fruit slice for a decorative touch.</li>
+                    
+                </ol>
+        </div>
         </div>
     </div>
-    <footer>
-        <p>&copy; 2023 Shut up and Eat</p>
-       <p><a href="index.html">Home</a> | <a href="recipes.html">Recipes</a> | <a href="chefbios.html">Chef's Bio</a> | <a href="seasonal.html">Seasonal Produce</a> | <a href="cultural.html">Cultural</a> | <a href="terms.html">Terms</a></p>
-    </footer>
+
+
+<footer>
+    <p>&copy; 2023 Shut up and Eat</p>
+    <p>Contact: <a href="mailto:jv00072@my.westga.edu">jv00072@my.westga.edu</a></p>
+    <p><a href="index.html">Home</a> | <a href="recipes.html">Recipes</a> | <a href="chefbios.html">Chef's Bio</a> | <a href="seasonal.html">Seasonal Produce</a> | <a href="cultural.html">Cultural</a> | <a href="terms.html">Terms</a> | <a href="addRecipe.html">Add a Recipe</a></p>
+</footer>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+
+document.getElementById("defaultOpen").click();
+</script>
+
 </body>
 </html>
-
-
